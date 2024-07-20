@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+/Snake(贪吃蛇)/x64/Debug
+/.vs/Snake(贪吃蛇)
+/x64/Debug
+/Snake(贪吃蛇).vcxproj.filters
+/Snake(贪吃蛇).vcxproj.user
