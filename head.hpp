@@ -29,7 +29,7 @@ private:
 
 public:
 	Snake();
-	const int get_lenth() const;
+	const int get_lenth() const noexcept;
 
 };
 
@@ -45,18 +45,18 @@ public:
 
 
 
-class Window {
-private:
-
-
-public:
-	Window();
-	~Window();
-
-	const void clean() const noexcept;
-
-
-};
+//class Window {
+//private:
+//
+//
+//public:
+//	Window();
+//	~Window();
+//
+//	const void clean() const noexcept;
+//
+//
+//};
 
 class Surface_logic_control {
 private:
@@ -69,7 +69,8 @@ class Main_surface : public Surface_logic_control {
 private:
 
 public:
-	const void start(Window Current_window) const noexcept;
+	Main_surface();
+	//const void start(Window Current_window) const noexcept;
 
 };
 

@@ -1,11 +1,14 @@
 #include "head.hpp"
 
 int main() {
-	Window windows;
-
+	
+	while (1) {
+		Main_surface Main;
+		std::cin.get();
+	}
 	
 	
 
-	std::cin.get();
+
 
 }
