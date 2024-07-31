@@ -35,3 +35,6 @@
 /x64/Debug
 /Snake(贪吃蛇).vcxproj.filters
 /Snake(贪吃蛇).vcxproj.user
+/Snake(贪吃蛇).vcxproj
+/Snake(贪吃蛇)/x64/Release
+/x64/Release
