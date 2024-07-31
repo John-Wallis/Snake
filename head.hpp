@@ -2,11 +2,11 @@
 #define head
 
 #include <easyx.h>
-//#include <string>
+#include <string>
 //#include <vector>
 #include <tuple>
 #include <iostream>
-#include <Windows.h>
+#include <exception>
 
 
 class Object {
@@ -45,45 +45,60 @@ public:
 
 
 
-//class Window {
-//private:
-//
-//
-//public:
-//	Window();
-//	~Window();
-//
-//	const void clean() const noexcept;
-//
-//
-//};
+class Game {
+private:
 
-class Surface_logic_control {
+public:
+
+
+};
+
+
+class Logic_control {
 private:
 
 public:
 
 };
 
-class Main_surface : public Surface_logic_control {
+
+class Surface_drawing : public Game {
 private:
 
 public:
-	Main_surface();
-	//const void start(Window Current_window) const noexcept;
+	const void Main_surface_drawing() const;
+	const void Main_surface_drawing(const int win_lenth, const int win_width) const;
 
+
+	const void Clear_surface() const noexcept;
 };
 
-class Game_control {
+
+class Main_surface_logic : public Logic_control {
 private:
 
 public:
-	const void start();
+	Main_surface_logic(const Surface_drawing& obj);
+	~Main_surface_logic();
 
+	const std::string message() const;
 
 };
 
+class Main_Option_logic : public Logic_control {
+private:
 
+public:
+	Main_Option_logic();
+	~Main_Option_logic();
+};
+
+class Game_logic : public Logic_control {
+private:
+
+public:
+
+};
 
 
 

@@ -2,13 +2,12 @@
 
 int main() {
 	
-	while (1) {
-		Main_surface Main;
-		std::cin.get();
-	}
-	
-	
+	Main_surface_logic obj;
 
+	obj.message();
 
+	//while (true) {
+	//	std::cin.get();
+	//	obj.message();
 
 }
